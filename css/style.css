@@ -1643,7 +1643,7 @@ button.toggleButton:hover{
 #mainbody-profile-page{
     width:100%;
     max-width: 600px;
-    height: 1700px;
+    height: 1800px;
     overflow-y: auto;
     flex-grow: 1;
 
@@ -1662,7 +1662,7 @@ button.toggleButton:hover{
     
 }
 #body-page{
-    height: 2270px;
+    height: 2370px;
     overflow: hidden;
     /* background-color: #9400FF; */
 }
