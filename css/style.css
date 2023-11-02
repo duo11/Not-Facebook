@@ -1646,6 +1646,7 @@ button.toggleButton:hover{
     height: 1800px;
     overflow-y: auto;
     flex-grow: 1;
+    border-radius: 10px;
 
 }
 
@@ -1763,6 +1764,7 @@ button.toggleButton:hover{
         overflow: visible;
         width: 100vw;
         height: fit-content;
+        
 
     }
     .post-profile-page{
