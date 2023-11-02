@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="imange/x-icon" href="../image/logo.ico">
+        <title>Not Facebook</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        
+    </head>
+    <body >
+        <header>
+
+            <!-- <*****************Nav Bar************************ -->
+
+        <div class="left-nav" >
+            <div class="item logo"><a href="../index.html" ><img src="../image/logo.ico" alt="logo" ></a></div>
+            <div id="searchbar" onclick="show()" tabindex="0" onkeydown="handleKeyPress(event)">
+                <div class="row">
+                    <img src="../image/search.png" class="search-icon" alt="searchIcon" >
+                    <p id="searchtext" style="overflow-x: 10px;width: 30vw;">Search</p>
+                </div>
+            </div>
+            
+        </div>
+        <div id="search-area">
+            <div id="search-header">
+                <button class="item-back" onclick="hide()" tabindex="0"><img src="../image/backicon.png" alt="backIcon"></button>
+                <div class="search-box">
+                    <div class="row1">
+                        <img src="../image/search.png" class="search-icon" alt="searchIcon">
+                        <input  type="text" id="input-box" placeholder="Search Facebook" >
+                    </div>
+                </div>
+            </div>
+            <div class="result-box">
+                <h1>Gần đây</h1>
+                <ul class="pb">
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="../image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="../image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="../image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="../image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="../image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="../image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="../image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="../image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="../image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="../image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="../image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="../image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="../image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="../image/x.png" class="x" alt="">
+                    </li>
+                    <li class="result">
+                        <div class="result-left" >
+                            <img src="../image/request1.jpg" alt="">
+                            <div>
+                                <h4>Name</h4>
+                                <div class="noti">
+                                    <div class="blue-dot"></div>
+                                    <p>9+ What's new</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="../image/x.png" class="x" alt="">
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+        <div id="main-nav">
+        <div class="main-menu">
+            <div class="icon" tooltip-title="Home page" ><a href="../index.html" ><img src="../image/main menu/home.png" alt="" ></a></div>
+            <div class="icon" tooltip-title="Video"><a href="video.html"><img src="../image/main menu/video.png" alt=" " ></a></div>
+            <div class="icon" tooltip-title="Marketplace"><a   href="marketplace.html"><img src="../image/main menu/marketplace.png"  alt=""></a></div>
+            <div class="icon" tooltip-title="Group"><a id="currentPage" href="group.html"><img src="../image/main menu/group.png" alt="" ></a></div>
+            <div class="icon" tooltip-title="Game"><a href="game.html"><img src="../image/main menu/game.png" alt=""  ></a></div>
+        </div>
+        </div>
+        <div class="right-nav" >
+            <div class="right-icon" tooltip-title="Menu" onclick="expandCreate()" onkeydown="expandCreate()" tabindex="0" ><img src="../image/grouptab.png"  alt="" ></div>
+            <div class="right-icon" tooltip-title="Messenger" onclick="expandChat()" onkeydown="expandChat()" tabindex="0"  ><img src="../image/mess.png"  alt="" ></div>
+            <div class="right-icon" tooltip-title="Notifications" onclick="expandNotiArea()" onkeydown="expandNotiArea()" tabindex="0" ><img src="../image/notification.png" alt="" ></div>
+            <div class=" account" tooltip-title="Account" onmousedown="show2()" onkeydown="show2()" tabindex="0" > <img src="../image/avatar1.png" alt="" id="accountImg" > </div>
+        </div>
+    <!-- <div id="noti-area-searchbar" style="overflow-y: auto ;height: fit-content;width: 100%;display: flex;position: fixed;" > -->
+        <div id="noti-area">
+            <div id="bigText-noti-area">
+                    <h1>Notifications</h1>
+                    <img src="../image/3dots.png" alt="" class="mediumIcon">
+            </div>
+            <div id="arrangeButton-noti-area">
+                <div id="item-arrangeButton-noti-area"><p style="color: #9400FF;">All</p></div>
+                <div id="item-arrangeButton-noti-area"><p>Unread</p></div>
+            </div>
+            <div id="earlier-text">
+                <p style="font-size: 22px;"><b>Earlier</b></p>
+                <p style="color:#9400FF;cursor: pointer;">See all</p>
+            </div>
+            <div id="item-noti-area">
+                <div id="avatar-noti-area">
+                    <img src="../image/request1.jpg" alt="" class="avatarNoti">
+                    <div id="smallStickyIcon"><img src="../image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>M-TP mentioned you in a comment in Sky tour.</p>
+                    <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+                </div>
+            </div>
+            <div id="item-noti-area">
+                <div id="avatar-noti-area">
+                    <img src="../image/request1.jpg" alt="" class="avatarNoti">
+                    <div id="smallStickyIcon"><img src="../image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>M-TP mentioned you in a comment in Sky tour.</p>
+                    <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+                </div>
+            </div>
+            <div id="item-noti-area">
+                <div id="avatar-noti-area">
+                    <img src="../image/request1.jpg" alt="" class="avatarNoti">
+                    <div id="smallStickyIcon"><img src="../image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>M-TP mentioned you in a comment in Sky tour.</p>
+                    <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+                </div>
+            </div>
+            <div id="item-noti-area">
+                <div id="avatar-noti-area">
+                    <img src="../image/request1.jpg" alt="" class="avatarNoti">
+                    <div id="smallStickyIcon"><img src="../image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>M-TP mentioned you in a comment in Sky tour.</p>
+                    <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+                </div>
+            </div>
+            <div id="item-noti-area">
+                <div id="avatar-noti-area">
+                    <img src="../image/request1.jpg" alt="" class="avatarNoti">
+                    <div id="smallStickyIcon"><img src="../image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>M-TP mentioned you in a comment in Sky tour.</p>
+                    <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+                </div>
+            </div>
+            <div id="item-noti-area">
+                <div id="avatar-noti-area">
+                    <img src="../image/request1.jpg" alt="" class="avatarNoti">
+                    <div id="smallStickyIcon"><img src="../image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>M-TP mentioned you in a comment in Sky tour.</p>
+                    <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+                </div>
+            </div>
+            <div id="item-noti-area">
+                <div id="avatar-noti-area">
+                    <img src="../image/request1.jpg" alt="" class="avatarNoti">
+                    <div id="smallStickyIcon"><img src="../image/mess.png" alt="" class="mediumIcon" id="smallIconNoti"></div>
+                </div>
+                <div id="text-item-noti-area""  >
+                    <p>M-TP mentioned you in a comment in Sky tour.</p>
+                    <p style="font-size: small;color: #96979A;">32 minutes ago</p>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="scrollbararea" style="height: 100%;width: 0px;padding: 0 4 px;display: block;"></div>
+    </div> -->
+
+    <div id="chat-area">
+        <div id="bigText-noti-area">
+                <h1>Chats</h1>
+                <img src="../image/3dots.png" alt="" class="mediumIcon">
+        </div>
+        <input type="text" name="" id="input-chat" placeholder="Search Messenger">
+        <div id="arrangeButton-noti-area">
+            <div id="item-arrangeButton-noti-area"><p style="color: #9400FF;">All</p></div>
+            <div id="item-arrangeButton-noti-area"><p>Unread</p></div>
+        </div>
+        
+        <div id="item-chat-area">
+            <div id="avatar-noti-area">
+                <img src="../image/request2.jpg" alt="" class="avatarNoti">
+            </div>
+            <div id="text-item-noti-area""  >
+                <p>Son tung mtp</p>
+                <p style="font-size: small;color: #96979A;">Hello <3</p>
+            </div>
+        </div>
+        <div id="item-chat-area">
+            <div id="avatar-noti-area">
+                <img src="../image/request1.jpg" alt="" class="avatarNoti">
+            </div>
+            <div id="text-item-noti-area""  >
+                <p>Jack-97</p>
+                <p style="font-size: small;color: #96979A;"> Như mọi hôm nhé</p>
+            </div>
+        </div>
+        <div id="item-chat-area">
+            <div id="avatar-noti-area">
+                <img src="../image/avatarDo.jpg" alt="" class="avatarNoti">
+            </div>
+            <div id="text-item-noti-area""  >
+                <p>Độ Mixi</p>
+                <p style="font-size: small;color: #96979A;">Tối stream không em</p>
+            </div>
+        </div>
+        <div id="item-chat-area">
+            <div id="avatar-noti-area">
+                <img src="../image/avatarBo.jpg" alt="" class="avatarNoti">
+            </div>
+            <div id="text-item-noti-area""  >
+                <p>Tui tên Bô</p>
+                <p style="font-size: small;color: #96979A;">A Độ rủ bắn cs2</p>
+            </div>
+        </div>
+        <div id="item-chat-area">
+            <div id="avatar-noti-area">
+                <img src="../image/avatarHanu.jpg" alt="" class="avatarNoti">
+            </div>
+            <div id="text-item-noti-area""  >
+                <p>Đại học Hà Nội</p>
+                <p style="font-size: small;color: #96979A;">Em trượt rồi :((</p>
+            </div>
+        </div>
+        <div id="item-chat-area">
+            <div id="avatar-noti-area">
+                <img src="../image/avatarviewsonic.jpg" alt="" class="avatarNoti">
+            </div>
+            <div id="text-item-noti-area""  >
+                <p>ViewSonic</p>
+                <p style="font-size: small;color: #96979A;">You: Cho e hỏi màn LG g63 a ơi</p>
+            </div>
+        </div>
+        <div id="item-chat-area">
+            <div id="avatar-noti-area">
+                <img src="../image/avatarReviewphim.png" alt="" class="avatarNoti">
+            </div>
+            <div id="text-item-noti-area""  >
+                <p>Review phim</p>
+                <p style="font-size: small;color: #96979A;">You: Phim không hay</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="create-area">
+        <div id="bigText-noti-area">
+                <h1>Create</h1>
+        </div>
+        <div class="item-create-area">
+            <div class="img-item-create-area">
+                <img src="../image/writePost.png" alt="" class="mediumIcon">
+            </div>
+            <div class="text-item-create-area">
+                <p><b>Post</b></p>
+                <p class="smallText">Share a post on News Feed</p>
+            </div>
+        </div>
+        <div class="item-create-area">
+            <div class="img-item-create-area">
+                <img src="../image/story.png" alt="" class="mediumIcon">
+            </div>
+            <div class="text-item-create-area">
+                <p><b>Story</b></p>
+                <p class="smallText">Share a photo or write something</p>
+            </div>
+        </div>
+        <div class="item-create-area">
+            <div class="img-item-create-area">
+                <img src="../image/reels.png" alt="" class="mediumIcon">
+            </div>
+            <div class="text-item-create-area">
+                <p><b>Reel</b></p>
+                <p class="smallText">Share a reel.</p>
+            </div>
+        </div>
+        <div class="item-create-area">
+            <div class="img-item-create-area">
+                <img src="../image/star.png" alt="" class="mediumIcon">
+            </div>
+            <div class="text-item-create-area">
+                <p><b>Life Event</b></p>
+                <p class="smallText">Add a life to your profile.</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div class="item-create-area">
+            <div class="img-item-create-area">
+                <img src="../image/flag.png" alt="" class="mediumIcon">
+            </div>
+            <div class="text-item-create-area">
+                <p><b>Page</b></p>
+                <p class="smallText">Connect and share with customers or fans. </p>
+            </div>
+        </div>
+        <div class="item-create-area">
+            <div class="img-item-create-area">
+                <img src="../image/megaphone.png" alt="" class="mediumIcon">
+            </div>
+            <div class="text-item-create-area">
+                <p><b>Ad</b></p>
+                <p class="smallText">Advertise your business, brand or organisation.</p>
+            </div>
+        </div>
+        <div class="item-create-area">
+            <div class="img-item-create-area">
+                <img src="../image/group.png" alt="" class="largeIcon">
+            </div>
+            <div class="text-item-create-area">
+                <p><b>Group</b></p>
+                <p class="smallText">Connect with people who share your interests.</p>
+            </div>
+        </div>
+        <div class="item-create-area">
+            <div class="img-item-create-area">
+                <img src="../image/event.png" alt="" class="largeIcon">
+            </div>
+            <div class="text-item-create-area">
+                <p><b>Event</b></p>
+                <p class="smallText">Bring people together with a public or private.</p>
+            </div>
+        </div>
+        <div class="item-create-area">
+            <div class="img-item-create-area">
+                <img src="../image/shopping-bags.png" alt="" class="largeIcon">
+            </div>
+            <div class="text-item-create-area">
+                <p><b>Marketplace Listing</b></p>
+                <p class="smallText">Sell items to people in your community.</p>
+            </div>
+        </div>
+        
+        
+    </div>
+        <div id="setting-area" >
+            <div id="profile-area">
+                <a class="profile-box" href="profile.html" >
+                        <img src="../image/avatar.png" alt="" >
+                        <p>Nguyen Tuan Duong</p>
+                </a>
+                <hr>
+                <br/>
+                <a class="p3" href="#">See all profiles</a>
+            </div>
+            <ul class="ul1">
+                <li><img src="../image/setting.png" class="si" alt=""><p>Settings & privacy</p></li>
+                <li><img src="../image/help.png" class="si" alt=""><p>Help & support</p></li>
+                <li><img src="../image/darkmode.png"class="si" alt=""><p>Screen & accessibility</p></li>
+                <li><img src="../image/feedback.png"class="si" alt=""><p>Feedback</p></li>
+                <li><img src="../image/logout.png"class="si" alt=""><p>Log off</p></li>
+                
+            </ul>
+            <p class="p4">Privacy  · Clause  · Advertise  · Ad choices   · Cookies  ·   · © Meta 2023</p>
+
+        </div>
+
+
+        </header>
+        <footer>
+            <div id="main-nav-footer">
+                <div class="main-menu">
+                    <div class="icon" tooltip-title="Home page" ><a href="../index.html" ><img src="../image/main menu/home.png" alt="" ></a></div>
+                    <div class="icon" tooltip-title="Video"><a  href="video.html"><img src="../image/main menu/video.png" alt="" ></a></div>
+                    <div class="icon" tooltip-title="Marketplace"><a  href="marketplace.html"><img src="../image/main menu/marketplace.png" alt="" ></a></div>
+                    <div class="icon" tooltip-title="Group"><a id="currentPage" href="group.html"><img src="../image/main menu/group.png" alt="" ></a></div>
+                    <div class="icon" tooltip-title="Game"><a href="game.html"><img src="../image/main menu/game.png"  alt="" ></a></div>
+                </div>
+                </div>
+        </footer>
+
+<!-- ************************************************************************************************************ -->
+<!-- ************************************************************************************************************ -->
+<!-- ************************************************************************************************************ -->
+<!-- ************************************************************************************************************ -->
+
+
+
+<div id="body-group-page" style="height: fit-content;display: flex;flex-direction: column;">
+    <div id="left-column-marketplace-page" >
+            <div id="head-lcmp">
+                <h2>Groups</h2>  
+                <div class="imgBorder-item-list-lcvp"><img src="../image/setting.png" alt="" class="mediumIcon"></div>
+            </div>
+            <div id="test">
+                <div id="main-test" style="width: 100%;">
+                    <div id="search-lcvp">
+                        <img src="../image/search.png" alt="" class="smallicon">
+                        <input type="text" placeholder=" Search groups">
+                    </div>
+                    <div id="list-lcvp">
+                        <div class="item-list-lcvp" id="currentItem" tabindex="0" >
+                            <div class="imgBorder-item-list-lcvp" id="currentIcon"><img src="../image/feeds.png" alt=""></div>
+                            <p>Your feed</p>
+                        </div>
+                        <div class="item-list-lcvp" id="item-2" tabindex="0">
+                            <div class="imgBorder-item-list-lcvp"><img src="../image/compass.png" alt=""></div>
+                            <p>Discover</p>
+                        </div>
+                        <div class="item-list-lcvp" id="item-3" tabindex="0">
+                            <div class="imgBorder-item-list-lcvp"><img src="../image/groupNoCircle.png" alt=""></div>
+                            <p>Your groups</p>
+                        </div>
+                        <div id="createGroupButton" id="item-4" tabindex="0" >
+                            <img src="../image/plusButtonColor.png" alt="" class="smallicon">
+                            <p>Create New Group</p>
+                        </div>
+                       
+                    </div>
+                    <br>
+                    <hr style="width: 95%; color: #F0F2F5;">
+                    <div id="filterArea-lcvp" style="margin: 0 10px;display: flex;align-items: center;justify-content: space-between;">
+                        <h1 style="font-size: 17px; margin: 10px 0;">Groups you've joined</h1>
+                        <p style="color: #9400FF;cursor: pointer;">See all</p>
+                    </div>
+                    <div id="list-lcvp"">
+                        <ul class="side-bar"  id="second-left-side-bar" style="max-height:none;padding: 0 5px;">
+                            <li class="list"><a href="#" class=""><img src="../image/hanuImg.jpg" id="side-icon8" alt="" ><p>BAN CÁN SỰ LỚP -HANU</p> </a></li>
+                            <li class="list"><a href="#" class=""><img src="../image/schoolimg.png" id="side-icon8" alt="" ><p>(FIT-K22) Nhóm trao đổi PCO - Lớp Thầy Khoa</p> </a></li>
+                            <li class="list"><a href="#" class=""><img src="../image/avatarHanu2.jpg" id="side-icon8" alt="" ><p>K22 HANUers</p> </a></li>
+                            <li class="list"><a href="#" class=""><img src="../image/schoolimg.png" id="side-icon8" alt="" ><p>Hanu.Lớp CB08.01.23 (Trần Đức Luân)</p> </a></li>
+                            <li class="list"><a href="#" class=""><img src="../image/schoolimg.png" id="side-icon8" alt="" ><p>Thông báo chung FIT</p> </a></li>
+                            <li class="list"><a href="#" class=""><img src="../image/avatarHanu2.jpg" id="side-icon8" alt="" ><p>K23 HANUers</p> </a></li>
+                            <li class="list"><a href="#" class=""><img src="../image/hanuImg.jpg" id="side-icon8" alt="" ><p>TRƯỜNG ĐẠI HỌC HÀ NỘI-OFFICIAL GROUP (NHÓM MỚI)</p> </a></li>
+                            <li class="list"><a href="#" class=""><img src="../image/fitImg.jpg" id="side-icon8" alt="" ><p>K22 FIT HANU</p> </a></li>
+                        </ul>
+                        
+                        
+                    </div>
+                </div>  
+                <div id="scrollbararea" style="height: 100%;width: 8px;display: block;"></div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="left-column-marketplace-page-after">
+            <div id="head-lcmp-after" >
+                <div id="item-head-lcmp-after" tabindex="0">
+                    <p>Your feed</p>
+
+                </div>
+                <div id="item-head-lcmp-after" tabindex="0">
+                    <p>Discover</p>
+                </div>
+                <div id="item-head-lcmp-after" tabindex="0" >
+                    <p>Your group</p>
+                </div>
+            </div>
+            <div id="search-lcmp-after" ><input type="text" placeholder="Search groups"></div>
+        </div>
+
+
+
+        <div   id="groupChatArea-group-page2" >
+            <h3 style="width: 96%;padding: 10px 0px 5px 10px;" >Your community chats</h3>
+            <br>
+            <div class="item-groupChat" >
+                <div class="img-item-groupChat">
+                    <img src="../image/hanuImg.jpg" alt="" id="side-icon8" style="position: absolute;right: 0 ;">
+                    <div id="smallIconGroupChat">
+                        <img src="../image/chat.png" alt="" style="height: 20px;" >
+                    </div>  
+                </div>
+                <div style="line-height: 1.1em;">
+                    <p style="color:#7b7c7e;font-size: small;">BAN CAN SU HANU</p>
+                    <p style="font-size: 14px;color: rgb(64, 64, 64);"><b>General chat</b></p>
+                    <p style="font-size: small;color:#7b7c7e ">Duong sent a messege.5d</p>
+                </div>
+            </div>
+            <div class="item-groupChat" >
+                <div class="img-item-groupChat">
+                    <img src="../image/fitImg.jpg" alt="" id="side-icon8" style="position: absolute;right: 0 ;">
+                    <div id="smallIconGroupChat">
+                        <img src="../image/chat.png" alt="" style="height: 20px;" >
+                    </div>  
+                </div>
+                <div style="line-height: 1.1em;">
+                    <p style="color:#7b7c7e;font-size: small;">(FIT-K22) Nhóm trao đổi PCO</p>
+                    <p style="font-size: 14px;color: rgb(64, 64, 64);"><b>Trợ giúp & tìm hỗ trợ</b></p>
+                    <p style="font-size: small;color:#7b7c7e ">Duong sent a messege.2d</p>
+                </div>
+            </div>
+            <div class="item-groupChat" >
+                <div class="img-item-groupChat">
+                    <img src="../image/schoolimg.png" alt="" id="side-icon8" style="position: absolute;right: 0 ;">
+                    <div id="smallIconGroupChat">
+                        <img src="../image/chat.png" alt="" style="height: 20px;" >
+                    </div>  
+                </div>
+                <div style="line-height: 1.1em;">
+                    <p style="color:#7b7c7e;font-size: small;">BAN CAN SU HANU</p>
+                    <p style="font-size: 14px;color: rgb(64, 64, 64);"><b>General chat</b></p>
+                    <p style="font-size: small;color:#7b7c7e ">Duong sent a messege.5d</p>
+                </div>
+            </div>
+            <br>
+            <h3 style="width: 96%;padding: 10px 0px 5px 10px;">Chats you should join</h3>
+            <br>
+            <div class="item-groupChat" >
+                <div class="img-item-groupChat">
+                    <img src="../image/schoolimg.png" alt="" id="side-icon8" style="position: absolute;right: 0 ;">
+                    <div id="smallIconGroupChat">
+                        <img src="../image/chat.png" alt="" style="height: 20px;" >
+                    </div>  
+                </div>
+                <div style="line-height: 1.1em;">
+                    <p style="color:#7b7c7e;font-size: small;">Cộng đồng sinh viên IT</p>
+                    <p style="font-size: 14px;color: rgb(64, 64, 64);"><b>Svit - Nghiện game nên học it</b></p>
+                    <p style="font-size: small;color:#7b7c7e ">Close to member limit</p>
+                </div>
+            </div>
+            <div class="item-groupChat" >
+                <div class="img-item-groupChat">
+                    <img src="../image/schoolimg.png" alt="" id="side-icon8" style="position: absolute;right: 0 ;">
+                    <div id="smallIconGroupChat">
+                        <img src="../image/chat.png" alt="" style="height: 20px;" >
+                    </div>  
+                </div>
+                <div style="line-height: 1.1em;">
+                    <p style="color:#7b7c7e;font-size: small;">IT jobs & internships (Vietnam)</p>
+                    <p style="font-size: 14px;color: rgb(64, 64, 64);"><b>Tuyển dụng IT</b></p>
+                    <p style="font-size: small;color:#7b7c7e ">Click to join</p>
+                </div>
+            </div>
+            <div class="item-groupChat" >
+                <div class="img-item-groupChat">
+                    <img src="../image/schoolimg.png" alt="" id="side-icon8" style="position: absolute;right: 0 ;">
+                    <div id="smallIconGroupChat">
+                        <img src="../image/chat.png" alt="" style="height: 20px;" >
+                    </div>  
+                </div>
+                <div style="line-height: 1.1em;">
+                    <p style="color:#7b7c7e;font-size: small;">IT jobs & internships (Vietnam)</p>
+                    <p style="font-size: 14px;color: rgb(64, 64, 64);"><b>Jobs</b></p>
+                    <p style="font-size: small;color:#7b7c7e ">Click to join</p>
+                </div>
+            </div>
+            
+
+        </div>
+
+    <div id="mainBody-marketplace-page" style=" width: 100%; display: flex; margin-top: 15px; ">
+        <div id="postArea-group-page" style="width: 100%;max-width: 1100px;height: fit-content;display: flex;flex-shrink: 5;">
+            <div id="" style="margin:0 auto;width: 100%;" >
+            <p style="height: fit-content;margin: 10px;">Recent activities</p>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="left-post-header">
+                            <div class="account" tooltip-title="Account"><a href="profile.html" ><img src="../image/avatarviewsonic.jpg"  alt="" id="avatarImg"></a></div>
+                            <div class="info">
+                                <a class="name" href="profile.html" >Dev ơi mình đi đâu thế</a>
+                                <p class="date">Viết Sơn. 12h</p>
+                            </div>
+                    </div>
+                    <div class="option" >
+                        <div class="moreoption" tabindex="0"><img src="../image/3dots.png" alt=""></div>
+                        <div class="moreoption" tabindex="0"><img src="../image/x.png" alt=""></div>
+                        
+                    </div>
+                </div>
+                    
+    
+                    <div class="post-content">
+                        <div class="ct">
+                            <div>
+                                
+                                <p class="caption" id="caption1" >
+                                    Range Minimum Query (RMQ)
+
+RMQ là bài toán cho câu hỏi "Làm thế nào để tìm giá trị nhỏ nhất trong một khoảng con cụ thể của một dãy số đã cho?".
+
+Cụ thể:
+Cho mảng A gồm n phần tử, và q truy vấn. mỗi truy vấn yêu cầu in ra giá trị nhỏ nhất của mảng a trong khoảng l đến r.
+Có 2 hướng tiếp cận chính là RMQ với Segment Tree và RMQ với Sparse Table. Ở đây chúng ta sẽ dùng cài đặt Sparse Table vì code tương đối ngắn gọn và dễ hiểu. Segment tree là cấu trúc dữ liệu khá tổng quát và không phù hợp nhất với RMQ. Bạn có thể đọc thêm về SegmentTree ở bài viết này:
+https://www.facebook.com/.../permalink/9962524897151125/
+
+Ý TƯỞNG CHÍNH:
+Gọi getMin(l,r) là giá trị nhỏ nhất của mảng trong khoảng [l,r].
+Nhận xét rằng: getMin(l,r) = min(getMin(l,x),getMin(y,r)) nếu như đoạn [l,x], [y,r] phủ hết đoạn [l,r]
+Xét nếu chỉ cần lưu giá trị nhỏ nhất của các đoạn có độ dài là luỹ thừa của 2. Giá trị nhỏ nhất của một đoạn [l,r] bất kỳ có thể được tính bằng giá trị nhỏ nhất của 2 đoạn [l,x], [y,r] sao cho mỗi đoạn có độ dài là luỹ thừa đủ lớn của 2.
+Sparse Table là bảng lưu các giá trị Min(l,l+2^k-1). Nhận thấy rằng k có giá trị lớn nhất là log(N). Như vậy việc tính toán Sparse Table chỉ tốn độ phức tạp Nlog(N).
+Bên dưới là code và minh hoạ.
+#cd_5 #dev_algo
+                                </p>
+                                    <p class="dot" id="dot1">...</p>
+                                <button class="toggleButton" href="caption1" id="1">See more</button>
+                            </div>
+                        </div>
+                        <img src="../image/postDevOi.jpg" alt="" >
+                    </div>
+                    <div class="post-footer">
+                        <div class="interacts">
+                            <div class="left-interacts">
+                                <img src="../image/like.png" alt="" >
+                                <p>1.2k</p>
+                            </div>
+                            <div class="right-interacts">
+                                <p>210</p>
+                                <img src="../image/comment.png"  alt="">
+                                
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="interact-button">
+                            
+                                <div class="block block-1" tabindex="0" ><img src="../image/likewhite.png" alt="" ><p>Like</p></div>
+                                <div class="block block-1"  tabindex="0"><img src="../image/comment.png" alt="" ><p>Comment</p></div>
+                                <div class="block block-1"  tabindex="0"><img src="../image/share.png" alt="" ><p>Share</p></div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="post">
+                    <div class="post-header">
+                        <div class="left-post-header">
+                            <div class="account" tooltip-title="Account"><a href="profile.html" ><img src="../image/avatarviewsonic.jpg"  alt="" id="avatarImg"></a></div>
+                            <div class="info">
+                                <a class="name" href="profile.html" >Dev ơi mình đi đâu thế</a>
+                                <p class="date">Code Mely. 1h</p>
+                            </div>
+                    </div>
+                    <div class="option" >
+                        <div class="moreoption" tabindex="0"><img src="../image/3dots.png" alt=""></div>
+                        <div class="moreoption" tabindex="0"><img src="../image/x.png" alt=""></div>
+                        
+                    </div>
+                </div>
+                    
+    
+                    <div class="post-content">
+                        <div class="ct">
+                            <div>
+                                
+                                <p class="caption" id="caption1" >
+                                    Hé lô bà dà, thứ 7 tuần này cộng đồng "Dev ơi" chúng mình gặp nhau nhé! 😋
+                                    Địa điểm là ở một quán cafe ở gần trường PTIT hoặc HUST. Nếu cậu ở Hà Nội thì đừng quên thu xếp lịch để đến gặp mặt mọi người nà. Chi tiết MeLy để dưới nha! ❤ 
+                                    p.s: Vì không gian có hạn nên các bạn tham gia đăng ký sớm kẻo hết chỗ nhé ạ!
+                                </p>
+                                    <p class="dot" id="dot1">...</p>
+                                <button class="toggleButton" href="caption1" id="1">See more</button>
+                            </div>
+                        </div>
+                        <img src="../image/postDevOi2.jpg" alt="" >
+                    </div>
+                    <div class="post-footer">
+                        <div class="interacts">
+                            <div class="left-interacts">
+                                <img src="../image/like.png" alt="" >
+                                <p>1.2k</p>
+                            </div>
+                            <div class="right-interacts">
+                                <p>210</p>
+                                <img src="../image/comment.png"  alt="">
+                                
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="interact-button">
+                            
+                                <div class="block block-1" tabindex="0" ><img src="../image/likewhite.png" alt="" ><p>Like</p></div>
+                                <div class="block block-1"  tabindex="0"><img src="../image/comment.png" alt="" ><p>Comment</p></div>
+                                <div class="block block-1"  tabindex="0"><img src="../image/share.png" alt="" ><p>Share</p></div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            
+        </div>
+        <div id="invisibleBox" style="width: 28vw;flex-basis: 25vw;flex-shrink: 0;">
+       
+        </div>
+        <div   id="groupChatArea-group-page" >
+            <h3 style="width: 100%;padding: 10px 0px 5px 10px;" >Your community chats</h3>
+            <br>
+            <div class="item-groupChat" >
+                <div class="img-item-groupChat">
+                    <img src="../image/hanuImg.jpg" alt="" id="side-icon8" style="position: absolute;right: 0 ;">
+                    <div id="smallIconGroupChat">
+                        <img src="../image/chat.png" alt="" style="height: 20px;" >
+                    </div>  
+                </div>
+                <div style="line-height: 1.1em;">
+                    <p style="color:#7b7c7e;font-size: small;">BAN CAN SU HANU</p>
+                    <p style="font-size: 14px;color: rgb(64, 64, 64);"><b>General chat</b></p>
+                    <p style="font-size: small;color:#7b7c7e ">Duong sent a messege.5d</p>
+                </div>
+            </div>
+            <div class="item-groupChat" >
+                <div class="img-item-groupChat">
+                    <img src="../image/fitImg.jpg" alt="" id="side-icon8" style="position: absolute;right: 0 ;">
+                    <div id="smallIconGroupChat">
+                        <img src="../image/chat.png" alt="" style="height: 20px;" >
+                    </div>  
+                </div>
+                <div style="line-height: 1.1em;">
+                    <p style="color:#7b7c7e;font-size: small;">(FIT-K22) Nhóm trao đổi PCO </p>
+                    <p style="font-size: 14px;color: rgb(64, 64, 64);"><b>Trợ giúp & tìm hỗ trợ</b></p>
+                    <p style="font-size: small;color:#7b7c7e ">Duong sent a messege.2d</p>
+                </div>
+            </div>
+            <div class="item-groupChat" >
+                <div class="img-item-groupChat">
+                    <img src="../image/schoolimg.png" alt="" id="side-icon8" style="position: absolute;right: 0 ;">
+                    <div id="smallIconGroupChat">
+                        <img src="../image/chat.png" alt="" style="height: 20px;" >
+                    </div>  
+                </div>
+                <div style="line-height: 1.1em;">
+                    <p style="color:#7b7c7e;font-size: small;">BAN CAN SU HANU</p>
+                    <p style="font-size: 14px;color: rgb(64, 64, 64);"><b>General chat</b></p>
+                    <p style="font-size: small;color:#7b7c7e ">Duong sent a messege.5d</p>
+                </div>
+            </div>
+            <br>
+            <h3 style="width: 100%;padding: 10px 0px 5px 10px;">Chats you should join</h3>
+            <br>
+            <div class="item-groupChat" >
+                <div class="img-item-groupChat">
+                    <img src="../image/schoolimg.png" alt="" id="side-icon8" style="position: absolute;right: 0 ;">
+                    <div id="smallIconGroupChat">
+                        <img src="../image/chat.png" alt="" style="height: 20px;" >
+                    </div>  
+                </div>
+                <div style="line-height: 1.1em;">
+                    <p style="color:#7b7c7e;font-size: small;">Cộng đồng sinh viên IT</p>
+                    <p style="font-size: 14px;color: rgb(64, 64, 64);"><b>Svit - Nghiện game nên học it</b></p>
+                    <p style="font-size: small;color:#7b7c7e ">Close to member limit</p>
+                </div>
+            </div>
+            <div class="item-groupChat" >
+                <div class="img-item-groupChat">
+                    <img src="../image/schoolimg.png" alt="" id="side-icon8" style="position: absolute;right: 0 ;">
+                    <div id="smallIconGroupChat">
+                        <img src="../image/chat.png" alt="" style="height: 20px;" >
+                    </div>  
+                </div>
+                <div style="line-height: 1.1em;">
+                    <p style="color:#7b7c7e;font-size: small;">IT jobs & internships (Vietnam)</p>
+                    <p style="font-size: 14px;color: rgb(64, 64, 64);"><b>Tuyển dụng IT</b></p>
+                    <p style="font-size: small;color:#7b7c7e ">Click to join</p>
+                </div>
+            </div>
+            <div class="item-groupChat" >
+                <div class="img-item-groupChat">
+                    <img src="../image/schoolimg.png" alt="" id="side-icon8" style="position: absolute;right: 0 ;">
+                    <div id="smallIconGroupChat">
+                        <img src="../image/chat.png" alt="" style="height: 20px;" >
+                    </div>  
+                </div>
+                <div style="line-height: 1.1em;">
+                    <p style="color:#7b7c7e;font-size: small;">IT jobs & internships (Vietnam)</p>
+                    <p style="font-size: 14px;color: rgb(64, 64, 64);"><b>Jobs</b></p>
+                    <p style="font-size: small;color:#7b7c7e ">Click to join</p>
+                </div>
+            </div>
+            
+            
+        </div>
+                
+    </div>
+
+
+</div>
+
+            <script type="text/javascript" src="../javascript/group.js" ></script>
+    </body>
+</html>
